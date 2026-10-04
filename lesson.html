@@ -13,12 +13,12 @@
   <header class="header">
     <a href="index.html" class="back-link" data-nav="map">← На карту</a>
     <div class="header__title">
-      <small>Модуль 2</small>
-      Фишинг и Социальная инженерия
+      <small id="lesson-module-num">Модуль 2</small>
+      <span id="lesson-module-title">Фишинг и Социальная инженерия</span>
     </div>
     <div class="progress-wrap" style="flex-basis: 220px">
-      <span class="progress-label">Урок <strong>2 из 5</strong></span>
-      <div class="progress-bar"><div class="progress-bar__fill" style="width: 40%"></div></div>
+      <span class="progress-label">Урок <strong id="lesson-counter">2 из 3</strong></span>
+      <div class="progress-bar"><div class="progress-bar__fill" id="lesson-bar" style="width: 66%"></div></div>
     </div>
   </header>
 
@@ -26,13 +26,7 @@
 
     <aside class="sidebar">
       <h2 class="sidebar__title">Содержание модуля</h2>
-      <ul class="steps-list">
-        <li><a href="#" class="is-done"><span class="dot">✓</span> Урок 2.1</a></li>
-        <li><a href="#" class="is-current"><span class="dot">2</span> Урок 2.2</a></li>
-        <li><a href="#"><span class="dot">3</span> Урок 2.3</a></li>
-        <li><a href="#"><span class="dot">4</span> Урок 2.4</a></li>
-        <li><a href="#"><span class="dot">5</span> Урок 2.5</a></li>
-      </ul>
+      <ul class="steps-list" id="lesson-list"></ul>
     </aside>
 
     <main class="content">
@@ -57,7 +51,7 @@
 
         <article class="card">
           <h1>Демо-урок</h1>
-          <p>Урок 2.2 · Как распознать фишинговое письмо</p>
+          <p id="lesson-subtitle">Урок 2.2 · Как распознать фишинговое письмо</p>
 
           <h2>Что такое фишинг?</h2>
           <p>

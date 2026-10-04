@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberProtect — Фишинг и Социальная инженерия</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="back-link" data-nav="map">← На карту</a>
+    <div class="header__title">
+      <small>Модуль 2</small>
+      Фишинг и Социальная инженерия
+    </div>
+    <div class="progress-wrap" style="flex-basis: 220px">
+      <span class="progress-label">Урок <strong>2 из 5</strong></span>
+      <div class="progress-bar"><div class="progress-bar__fill" style="width: 40%"></div></div>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <h2 class="sidebar__title">Содержание модуля</h2>
+      <ul class="steps-list">
+        <li><a href="#" class="is-done"><span class="dot">✓</span> Урок 2.1</a></li>
+        <li><a href="#" class="is-current"><span class="dot">2</span> Урок 2.2</a></li>
+        <li><a href="#"><span class="dot">3</span> Урок 2.3</a></li>
+        <li><a href="#"><span class="dot">4</span> Урок 2.4</a></li>
+        <li><a href="#"><span class="dot">5</span> Урок 2.5</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <div class="content__inner">
+
+        <nav class="stepper" aria-label="Шаги урока">
+          <div class="step is-done">
+            <div class="step__circle">✓</div>
+            Step 1
+          </div>
+          <div class="step__line is-done"></div>
+          <div class="step is-current">
+            <div class="step__circle">2</div>
+            Step 2
+          </div>
+          <div class="step__line"></div>
+          <div class="step">
+            <div class="step__circle">3</div>
+            Step 3
+          </div>
+        </nav>
+
+        <article class="card">
+          <h1>Демо-урок</h1>
+          <p>Урок 2.2 · Как распознать фишинговое письмо</p>
+
+          <h2>Что такое фишинг?</h2>
+          <p>
+            <strong>Фишинг</strong> — это вид мошенничества, при котором злоумышленник выдаёт себя
+            за доверенное лицо или организацию, чтобы получить пароли, данные карт или доступ к системам.
+            Это текст-заглушка для оценки типографики и межстрочных интервалов.
+          </p>
+
+          <div class="callout">
+            <b>Важно:</b> ни один банк и ни один сервис не запрашивает пароль или код из SMS по почте или в чате.
+          </div>
+
+          <h2>Признаки подозрительной ссылки</h2>
+          <p>
+            Перед тем как перейти по ссылке, наведите курсор и внимательно проверьте домен.
+            Второй текстовый блок-заглушка: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <pre class="code">https://secure-bank.example.com   ← настоящий домен
+https://secure-bank.example.com.login-check.ru   ← подделка</pre>
+        </article>
+
+        <div class="lesson-nav">
+          <a href="#" class="btn btn--ghost">← Назад</a>
+          <a href="#" class="btn">Далее →</a>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

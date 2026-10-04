@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberProtect — Карта обучения Кибербезопасности</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="logo">🛡️ <span>CyberProtect</span></a>
+    <div class="progress-wrap" title="Общий прогресс курса">
+      <span class="progress-label">Прогресс: <strong>33%</strong></span>
+      <div class="progress-bar" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar__fill"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-head">
+      <span class="eyebrow">Курс по информационной безопасности</span>
+      <h1 class="page-title">Карта обучения <span>Кибербезопасности</span></h1>
+      <p class="page-sub">Проходите модули по порядку — каждый открывает следующий уровень.</p>
+    </div>
+
+    <section class="path" aria-label="Learning Path">
+
+      <article class="module module--done">
+        <div class="module__icon" aria-hidden="true">✓</div>
+        <div class="module__body">
+          <span class="module__status">Пройден</span>
+          <h2 class="module__title">1. Основы цифровой гигиены</h2>
+          <p class="module__desc">Пароли, двухфакторная аутентификация и безопасные привычки в сети. Описание-заглушка для оценки верстки карточки.</p>
+          <div class="module__meta">
+            <span class="tag">4 урока</span>
+            <span class="tag">~ 40 мин</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="module module--active">
+        <div class="module__icon" aria-hidden="true">⚡</div>
+        <div class="module__body">
+          <span class="module__status">В процессе</span>
+          <h2 class="module__title">2. Фишинг и Социальная инженерия</h2>
+          <p class="module__desc">Как распознавать поддельные письма, сайты и звонки мошенников. Описание-заглушка для оценки верстки карточки.</p>
+          <div class="module__meta">
+            <span class="tag">5 уроков</span>
+            <span class="tag">~ 55 мин</span>
+          </div>
+          <a href="lesson.html" class="btn" data-nav="lesson">Начать модуль →</a>
+        </div>
+      </article>
+
+      <article class="module module--locked" aria-disabled="true">
+        <div class="module__icon" aria-hidden="true">🔒</div>
+        <div class="module__body">
+          <span class="module__status">Заблокирован</span>
+          <h2 class="module__title">3. Защита персональных данных</h2>
+          <p class="module__desc">Откроется после завершения предыдущего модуля. Описание-заглушка для оценки верстки карточки.</p>
+          <div class="module__meta">
+            <span class="tag">6 уроков</span>
+            <span class="tag">~ 70 мин</span>
+          </div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

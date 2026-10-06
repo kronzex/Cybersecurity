@@ -103,7 +103,45 @@ function initNav() {
   });
 }
 
+const AUTH_KEY = 'neonShield_isAuthorized';
+
+function showApp() {
+  const auth = document.getElementById('auth-screen');
+  const app = document.getElementById('main-app');
+  if (auth) auth.hidden = true;
+  if (app) app.style.display = '';
+}
+
+function showAuth() {
+  const auth = document.getElementById('auth-screen');
+  const app = document.getElementById('main-app');
+  if (app) app.style.display = 'none';
+  if (auth) {
+    auth.hidden = false;
+    const login = document.getElementById('auth-login');
+    if (login) login.focus();
+  }
+}
+
+function initAuth() {
+  const auth = document.getElementById('auth-screen');
+  if (!auth) return;
+
+  if (localStorage.getItem(AUTH_KEY) === 'true') {
+    showApp();
+    return;
+  }
+
+  showAuth();
+  document.getElementById('auth-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    localStorage.setItem(AUTH_KEY, 'true');
+    showApp();
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  initAuth();
   initTabs();
   initLockedNodes();
   initLesson();
